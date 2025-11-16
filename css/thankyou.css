@@ -97,8 +97,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
 
     margin-top: 30px;
-    margin-bottom: -50px;
-    width: 100%;
+    margin-bottom: 5px;
 }
 
 /*------------------------------------Player-------------------------------------*/
@@ -111,6 +110,7 @@ nav ul li a:hover {
 
     width: 100%;
     max-width: 850px;
+    width: 90%;
     margin: 30px auto;
 }
 
@@ -150,4 +150,20 @@ footer {
 
 /*------------------------------------Responsividade-------------------------------------*/
 
-@media(max-width:)
+@media (max-width: 600px) {
+    
+   
+    .thank-you-card {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+
+    .player {
+        width: 80%; 
+    }
+    
+    .thankyou {
+        font-size: 1.1rem;
+    }
+}
