@@ -1,3 +1,4 @@
+/*------------------------------------Body Principal-------------------------------------*/
 body {
  	line-height:1.6;
 	margin:0px;
@@ -7,6 +8,7 @@ body {
     flex-direction: column;
 }
 
+/*------------------------------------Header-------------------------------------*/
 header {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
@@ -17,6 +19,7 @@ header {
     text-align: center;
 }
 
+/*------------------------------------Navegação-------------------------------------*/
 nav ul {
     list-style: none;
     padding: 0;
@@ -38,13 +41,14 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
+/*------------------------------------Página-------------------------------------*/
 main {
     display: flex;
     flex-wrap: wrap; /* quebrea de linha se necessário */
     max-width: 1200px; 
     margin: 0 auto; 
 }
-
+/*------------------------------------Imagem -------------------------------------*/
 .img {
     max-width: 100%; 
     height: auto;
@@ -56,7 +60,7 @@ main {
     padding-top: 2rem;
     margin-bottom: 60px
 }
-
+/*------------------------------------Texto-------------------------------------*/
 section {
     
     flex: 70%; 
@@ -67,7 +71,7 @@ article {
     margin-bottom: 1rem;
     text-align: justify;
 }
-
+/*------------------------------------Aside Links + Lista -------------------------------------*/
 aside {
     flex: 10%;
     background: #38b61e85 ;
@@ -86,25 +90,13 @@ aside ul li {
 }
 
 aside ul li a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     font-weight: bold;
 }
 
 aside ul li a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background: #0a2704;
-    color: rgb(199, 199, 199);
-    padding: 16px;
-    text-align: center;
-    clear: both; 
-}
-
-footer p {
-    margin: 0;
 }
 
 @keyframes spin {
@@ -122,6 +114,97 @@ footer p {
     width: 100%;
 }
 
+
+/* --- TABELA DE SHOWS --- */
+
+#tour-dates { /*bloco geral*/
+    width: 100%;
+    padding: 20px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.tour-table {/*bloco da propria tabela*/
+    width: 100%;
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+
+.tour-table thead {/* Cabeçalho da Tabela*/
+    background-color: #114106;
+    color: white;
+}
+
+.tour-table th, .tour-table td {/*elementos que compõe a tabela*/
+    padding: 15px 20px;
+    text-align: left;
+}
+
+
+.tour-table .date {/* Estilo das datas (Destaque) */
+    font-weight: bold;
+    color: #114106;
+}
+
+
+.tour-table tbody tr:nth-child(even) {/*cor diferente nas linhas*/
+    background-color: #f0fdf4; 
+}
+
+
+.tour-table tbody tr:hover {
+    background-color: #dcfce7;
+}
+
+/* --- BOTÕES DE INGRESSO --- */
+.btn-ticket {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #38b61e; /* Verde vibrante */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; /* Formato de pílula */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-ticket:hover {
+    background-color: #114106;
+    transform: scale(1.05);
+}
+
+/* Botão Esgotado (Cinza e sem clique) */
+.btn-ticket.sold-out {
+    background-color: #888;
+    cursor: not-allowed; /* Mostra símbolo de bloqueio no mouse */
+    opacity: 0.7;
+}
+
+.btn-ticket.sold-out:hover {
+    background-color: #888; /* Não muda de cor */
+    transform: none; /* Não cresce */
+}
+
+/* Responsividade básica para celular */
+@media (max-width: 600px) {
+    .tour-table th, .tour-table td {
+        padding: 10px; /* Diminui o espaço interno */
+        font-size: 0.9rem; /* Diminui a letra */
+    }
+}
+
+/*------------------------------------Formulario-------------------------------------*/
 #newsletter{
 display: flex;
 width: 100%;
@@ -204,6 +287,18 @@ button[type="submit"]:hover {
     background-color: #2e9719; 
 }
 
+/*------------------------------------Footer-------------------------------------*/
+footer {
+    background: #0a2704;
+    color: rgb(199, 199, 199);
+    padding: 16px;
+    text-align: center;
+    clear: both; 
+}
+
+footer p {
+    margin: 0;
+}
 
 .social-icons {
     margin-bottom: 15px;
@@ -224,7 +319,7 @@ button[type="submit"]:hover {
     opacity: 0.8;
 }
 
-/* --- RESPONSIVIDADE (CELULAR E TABLET) --- */
+/*------------------------------------Responsividade-------------------------------------*/
     @media (max-width: 768px) {
     
     main {
