@@ -82,7 +82,7 @@ main {
 }
 
 .grid:hover {
-    transform: translateY(-5px); /* Sobe um pouquinho ao passar o mouse */
+    transform: translateY(-5px); /* animação ao passar o mouse */
 }
 
 
@@ -162,4 +162,5 @@ footer {
         
         grid-template-columns: 1fr; 
     }
+
 }
