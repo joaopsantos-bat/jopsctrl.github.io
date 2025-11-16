@@ -1,9 +1,9 @@
 /*------------------Body------------------*/
 body {
-    line-height:1.6;
-	margin:0px;
-	padding:0px;
-	min-height: 100vh;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +25,7 @@ footer {
     color: rgb(199, 199, 199);
     padding: 16px;
     text-align: center;
-    clear: both; 
+    clear: both;
 }
 
 /*------------------Navegação------------------*/
@@ -52,7 +52,7 @@ main {
     margin: 0 auto;
     padding: 20px;
     width: 100%;
-    flex: 1; 
+    flex: 1;
     box-sizing: border-box;
 }
 
@@ -76,19 +76,20 @@ main {
 .grid {
     background: white;
     border-radius: 15px;
-    overflow: hidden; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .grid:hover {
-    transform: translateY(-5px); /* animação ao passar o mouse */
+    transform: translateY(-5px);
+    /* animação ao passar o mouse */
 }
 
 
 .pic {
     position: relative;
-    padding-bottom: 125%; 
+    padding-bottom: 125%;
     height: 0;
     overflow: hidden;
     background: #eee;
@@ -103,6 +104,7 @@ main {
     object-fit: cover;
     object-position: center;
 }
+
 /*------------------informações------------------*/
 .card-info {
     padding: 20px;
@@ -115,7 +117,7 @@ main {
     text-align: center;
 }
 
-.card-info h4 a{
+.card-info h4 a {
     text-decoration: underline;
     color: black;
     font-weight: normal;
@@ -140,16 +142,16 @@ footer {
 .social-icons {
     margin-bottom: 15px;
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     align-items: center;
 }
 
 .social-icons img {
-    width: 30px; 
+    width: 30px;
     height: auto;
-    transition: transform 0.3s ease; 
-    filter: invert(1) brightness(100%); 
+    transition: transform 0.3s ease;
+    filter: invert(1) brightness(100%);
 }
 
 .social-icons img:hover {
@@ -159,7 +161,7 @@ footer {
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .grid-main {
-        
-        grid-template-columns: 1fr; 
+
+        grid-template-columns: 1fr;
     }
 }

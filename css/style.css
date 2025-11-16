@@ -1,9 +1,9 @@
 /*------------------------------------Body Principal-------------------------------------*/
 body {
- 	line-height:1.6;
-	margin:0px;
-	padding:0px;
-	min-height: 100vh;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #60755c; 
+    color: #60755c;
     border-bottom: 2px solid #414e3e;
     transition: 0.3s;
 }
@@ -44,39 +44,43 @@ nav ul li a:hover {
 /*------------------------------------Página-------------------------------------*/
 main {
     display: flex;
-    flex-wrap: wrap; /* quebrea de linha se necessário */
-    max-width: 1200px; 
-    margin: 0 auto; 
+    flex-wrap: wrap;
+    /* quebrea de linha se necessário */
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 /*------------------------------------Imagem -------------------------------------*/
 .img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    border-radius: 8px; 
+    border-radius: 8px;
     display: block;
     margin: 0 auto;
-    width: 100%; 
+    width: 100%;
     text-align: center;
     padding-top: 2rem;
     margin-bottom: 60px
 }
+
 /*------------------------------------Texto-------------------------------------*/
 section {
-    
-    flex: 70%; 
-    padding: 3rem; 
+
+    flex: 70%;
+    padding: 3rem;
 }
 
 article {
     margin-bottom: 1rem;
     text-align: justify;
 }
+
 /*------------------------------------Aside Links + Lista -------------------------------------*/
 aside {
     flex: 10%;
-    background: #38b61e85 ;
+    background: #38b61e85;
     padding: 2rem;
-    min-height: fit-content; 
+    min-height: fit-content;
     text-align: center;
 }
 
@@ -103,6 +107,7 @@ aside ul li a:hover {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -110,53 +115,60 @@ aside ul li a:hover {
 
 #vinil {
     animation: spin 10s linear infinite;
-    border-radius: 47%; 
+    border-radius: 47%;
     width: 100%;
 }
 
 
 /* --- TABELA DE SHOWS --- */
 
-#tour-dates { /*bloco geral*/
+#tour-dates {
+    /*bloco geral*/
     width: 100%;
     padding: 20px;
-    max-width: 1000px; 
-    margin: 0 auto; 
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .table-wrapper {
     overflow-x: auto;
 }
 
-.tour-table {/*bloco da propria tabela*/
+.tour-table {
+    /*bloco da propria tabela*/
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     font-family: Arial, sans-serif;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
-.tour-table thead {/* Cabeçalho da Tabela*/
+.tour-table thead {
+    /* Cabeçalho da Tabela*/
     background-color: #114106;
     color: white;
 }
 
-.tour-table th, .tour-table td {/*elementos que compõe a tabela*/
+.tour-table th,
+.tour-table td {
+    /*elementos que compõe a tabela*/
     padding: 15px 20px;
     text-align: left;
 }
 
 
-.tour-table .date {/* Estilo das datas (Destaque) */
+.tour-table .date {
+    /* Estilo das datas (Destaque) */
     font-weight: bold;
     color: #114106;
 }
 
 
-.tour-table tbody tr:nth-child(even) {/*cor diferente nas linhas*/
-    background-color: #f0fdf4; 
+.tour-table tbody tr:nth-child(even) {
+    /*cor diferente nas linhas*/
+    background-color: #f0fdf4;
 }
 
 
@@ -168,10 +180,12 @@ aside ul li a:hover {
 .btn-ticket {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #38b61e; /* Verde vibrante */
+    background-color: #38b61e;
+    /* Verde vibrante */
     color: white;
     text-decoration: none;
-    border-radius: 20px; /* Formato de pílula */
+    border-radius: 20px;
+    /* Formato de pílula */
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
@@ -187,27 +201,34 @@ aside ul li a:hover {
 /* Botão Esgotado (Cinza e sem clique) */
 .btn-ticket.sold-out {
     background-color: #888;
-    cursor: not-allowed; /* Mostra símbolo de bloqueio no mouse */
+    cursor: not-allowed;
+    /* Mostra símbolo de bloqueio no mouse */
     opacity: 0.7;
 }
 
 .btn-ticket.sold-out:hover {
-    background-color: #888; /* Não muda de cor */
-    transform: none; /* Não cresce */
+    background-color: #888;
+    /* Não muda de cor */
+    transform: none;
+    /* Não cresce */
 }
 
 /* Responsividade básica para celular */
 @media (max-width: 600px) {
-    .tour-table th, .tour-table td {
-        padding: 10px; /* Diminui o espaço interno */
-        font-size: 0.9rem; /* Diminui a letra */
+
+    .tour-table th,
+    .tour-table td {
+        padding: 10px;
+        /* Diminui o espaço interno */
+        font-size: 0.9rem;
+        /* Diminui a letra */
     }
 }
 
 /*------------------------------------Formulario-------------------------------------*/
-#newsletter{
-display: flex;
-width: 100%;
+#newsletter {
+    display: flex;
+    width: 100%;
 }
 
 
@@ -218,12 +239,12 @@ width: 100%;
 }
 
 .form-container {
-    background-color: #f0fdf4; 
-    border: 1px solid #114106; 
-    border-radius: 18px; 
+    background-color: #f0fdf4;
+    border: 1px solid #114106;
+    border-radius: 18px;
     padding: 40px;
-    max-width: 500px; 
-    margin: 0 auto; 
+    max-width: 500px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -241,39 +262,42 @@ width: 100%;
 
 .input-group {
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }
 
 label {
-    display: block; 
+    display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #114106;
 }
 
 
-input[type="text"],input[type="email"],select {
-    width: 100%; 
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
     font-family: Arial, sans-serif;
-    transition: border-color 0.3s; 
+    transition: border-color 0.3s;
 }
 
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
-    border-color: #38b61e; 
+    border-color: #38b61e;
 }
 
 button[type="submit"] {
-    background-color: #114106; 
+    background-color: #114106;
     color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 30px; 
+    border-radius: 30px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -284,7 +308,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #2e9719; 
+    background-color: #2e9719;
 }
 
 /*------------------------------------Footer-------------------------------------*/
@@ -293,7 +317,7 @@ footer {
     color: rgb(199, 199, 199);
     padding: 16px;
     text-align: center;
-    clear: both; 
+    clear: both;
 }
 
 footer p {
@@ -303,16 +327,16 @@ footer p {
 .social-icons {
     margin-bottom: 15px;
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     align-items: center;
 }
 
 .social-icons img {
-    width: 30px; 
+    width: 30px;
     height: auto;
-    transition: transform 0.3s ease; 
-    filter: invert(1) brightness(100%); 
+    transition: transform 0.3s ease;
+    filter: invert(1) brightness(100%);
 }
 
 .social-icons img:hover {
@@ -320,8 +344,8 @@ footer p {
 }
 
 /*------------------------------------Responsividade-------------------------------------*/
-    @media (max-width: 768px) {
-    
+@media (max-width: 768px) {
+
     main {
         display: flex;
         flex-direction: column;
@@ -331,23 +355,26 @@ footer p {
     }
 
 
-    section, aside, article {
+    section,
+    aside,
+    article {
         width: 100%;
-        max-width: 100%; 
-        margin-left: 0 !important;  
+        max-width: 100%;
+        margin-left: 0 !important;
         margin-right: 0 !important;
-        padding: 20px; 
-        box-sizing: border-box; 
+        padding: 20px;
+        box-sizing: border-box;
     }
 
 
-    img, .img{
+    img,
+    .img {
         max-width: 100%;
         height: auto;
-        margin: 0 auto; 
+        margin: 0 auto;
         display: block;
     }
-    
+
 
     aside {
         margin-top: 0;
@@ -357,9 +384,10 @@ footer p {
         align-items: center;
     }
 
-    }
+}
+
 @media (max-width:887px) {
-    #vinil{
-    width: 100px !important;
+    #vinil {
+        width: 100px !important;
     }
 }
