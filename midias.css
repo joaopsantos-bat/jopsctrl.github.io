@@ -118,7 +118,7 @@ main {
 .card-info h4 a{
     text-decoration: underline;
     color: black;
-    font-weight: 50 !important;
+    font-weight: normal;
 }
 
 .card-info p {
@@ -162,5 +162,4 @@ footer {
         
         grid-template-columns: 1fr; 
     }
-
 }
