@@ -1,15 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+ 	line-height:1.6;
+	margin:0px;
+	padding:0px;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-style: normal;
-    background: linear-gradient(to bottom, #114106 95%, #ffffff 100%);
+    background: linear-gradient(to bottom, #114106 90%, #ffffff 100%);
     color: rgb(199, 199, 199);
     padding: 16px;
     text-align: center;
@@ -28,7 +30,12 @@ nav ul li {
 nav ul li a {
     color: #FFF;
     text-decoration: none;
-    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #60755c; 
+    border-bottom: 2px solid #414e3e;
+    transition: 0.3s;
 }
 
 main {
@@ -39,17 +46,15 @@ main {
 }
 
 .img {
-    width: 100%; 
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.img {
     max-width: 100%; 
     height: auto;
     border-radius: 8px; 
     display: block;
     margin: 0 auto;
+    width: 100%; 
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 60px
 }
 
 section {
@@ -117,6 +122,107 @@ footer p {
     width: 100%;
 }
 
+#newsletter{
+display: flex;
+width: 100%;
+}
+
+
+.newsletter-section {
+    flex: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.form-container {
+    background-color: #f0fdf4; 
+    border: 1px solid #114106; 
+    border-radius: 18px; 
+    padding: 40px;
+    max-width: 500px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #114106;
+    margin-top: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-container p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #114106;
+}
+
+
+input[type="text"],input[type="email"],select {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s; 
+}
+
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #38b61e; 
+}
+
+button[type="submit"] {
+    background-color: #114106; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e9719; 
+}
+
+
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+    filter: invert(1) brightness(100%); 
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
 
 /* --- RESPONSIVIDADE (CELULAR E TABLET) --- */
     @media (max-width: 768px) {
