@@ -1,0 +1,165 @@
+/*------------------Body------------------*/
+body {
+    line-height:1.6;
+	margin:0px;
+	padding:0px;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------Header------------------*/
+header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background: linear-gradient(to bottom, #114106 95%, #ffffff 100%);
+    color: rgb(199, 199, 199);
+    padding: 16px;
+    text-align: center;
+}
+
+/*------------------Footer------------------*/
+footer {
+    background: #0a2704;
+    color: rgb(199, 199, 199);
+    padding: 16px;
+    text-align: center;
+    clear: both; 
+}
+
+/*------------------Navegação------------------*/
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+/* --- ESTILO DA GALERIA DE MÍDIAS --- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    flex: 1; 
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    color: #114106;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*------------------Grid-Main------------------*/
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+/*------------------Grid de Midias------------------*/
+.grid {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease;
+}
+
+.grid:hover {
+    transform: translateY(-5px); /* animação ao passar o mouse */
+}
+
+
+.pic {
+    position: relative;
+    padding-bottom: 125%; 
+    height: 0;
+    overflow: hidden;
+    background: #eee;
+}
+
+.pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/*------------------informações------------------*/
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    color: #114106;
+    text-align: center;
+}
+
+.card-info h4 a{
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+}
+
+.card-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #0a2704;
+    color: rgb(199, 199, 199);
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+    filter: invert(1) brightness(100%); 
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .grid-main {
+        
+        grid-template-columns: 1fr; 
+    }
+}
